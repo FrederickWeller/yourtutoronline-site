@@ -91,3 +91,9 @@ table.pricing tr:last-child td { border-bottom: none; }
 @media (max-width: 800px) { .footer-wrap { grid-template-columns: 1fr; } }
 
 .booking-embed { background: var(--card); border: 1px dashed var(--border); border-radius: var(--radius); padding: 30px; text-align: center; color: var(--muted); }
+
+/* Testimonial */
+.testimonial { max-width: 720px; margin: 0 auto; text-align: center; padding: 8px 20px 4px; }
+.testimonial .quote-mark { font-size: 3.5rem; line-height: 1; color: var(--gold); font-family: Georgia, "Times New Roman", serif; }
+.testimonial blockquote { margin: 0; font-size: 1.3rem; font-style: italic; color: var(--navy-dark); line-height: 1.5; }
+.testimonial cite { display: block; margin-top: 1.1rem; font-style: normal; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.82rem; color: var(--gold-dark); }
