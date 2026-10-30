@@ -41,6 +41,8 @@ h3 { font-size: 1.15rem; }
 .site-nav a:hover { color: var(--gold); }
 .site-nav .cta { background: var(--gold); color: var(--navy-dark); padding: 8px 14px; border-radius: 999px; font-weight: 600; }
 .site-nav .cta:hover { background: var(--gold-dark); color: #fff; }
+.site-nav .nav-login { font-size: 0.85rem; opacity: 0.75; }
+.site-nav .nav-login:hover { opacity: 1; }
 
 /* Hero */
 .hero { background: linear-gradient(180deg, var(--navy) 0%, var(--navy-dark) 100%); color: #fff; padding: 64px 20px; }
