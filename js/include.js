@@ -1,7 +1,7 @@
 // Shared nav/footer include, mirroring the pattern used on frederickweller.io.
 // Bump ASSET_VERSION (and the ?v= on style.css / include.js in each page)
 // whenever the CSS or partials change, so browsers don't keep a cached copy.
-const ASSET_VERSION = '20261030a';
+const ASSET_VERSION = '20261030b';
 
 function includePartial(selector, url, after) {
   const el = document.querySelector(selector);

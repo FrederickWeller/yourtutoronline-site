@@ -35,7 +35,9 @@ h3 { font-size: 1.15rem; }
 /* Header / nav */
 .site-header { background: var(--navy-dark); }
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 14px 20px; }
-.brand { color: #fff; font-weight: 700; font-size: 1.15rem; text-decoration: none; }
+.brand { color: #fff; font-weight: 700; font-size: 1.15rem; text-decoration: none; display: inline-flex; align-items: center; }
+.brand img { display: block; height: 40px; width: auto; }
+.footer-logo { display: block; height: 35px; width: auto; margin-bottom: 8px; }
 .site-nav { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
 .site-nav a { color: #e7ecf1; text-decoration: none; font-size: 0.95rem; }
 .site-nav a:hover { color: var(--gold); }
