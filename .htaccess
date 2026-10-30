@@ -1,21 +1,24 @@
 # Redirects from the old TutorBird-hosted page addresses (and clean,
 # extensionless addresses) to the pages on the hand-coded site.
-# RedirectMatch with ^...$ anchors so /terms never matches /terms.html.
+# mod_rewrite (supported by Hostinger's LiteSpeed server); patterns are
+# anchored so /terms never matches /terms.html.
 
-RedirectMatch 301 ^/free-intro-booking/?$ /free-intro.html
-RedirectMatch 301 ^/free-intro/?$         /free-intro.html
-RedirectMatch 301 ^/home/?$               /
-RedirectMatch 301 ^/about-us/?$           /about.html
-RedirectMatch 301 ^/about/?$              /about.html
-RedirectMatch 301 ^/our-topics/?$         /subjects.html
-RedirectMatch 301 ^/topics/?$             /subjects.html
-RedirectMatch 301 ^/subjects/?$           /subjects.html
-RedirectMatch 301 ^/contact-us/?$         /contact.html
-RedirectMatch 301 ^/contact/?$            /contact.html
-RedirectMatch 301 ^/privacy-policy/?$     /privacy.html
-RedirectMatch 301 ^/privacy/?$            /privacy.html
-RedirectMatch 301 ^/terms/?$              /terms.html
-RedirectMatch 301 ^/terms-and-conditions/?$ /terms.html
-RedirectMatch 301 ^/pricing/?$            /pricing.html
-RedirectMatch 301 ^/videos/?$             /videos.html
-RedirectMatch 301 ^/login/?$              /login.html
+RewriteEngine On
+
+RewriteRule ^free-intro-booking/?$     /free-intro.html [R=301,L,NC]
+RewriteRule ^free-intro/?$             /free-intro.html [R=301,L,NC]
+RewriteRule ^home/?$                   /                [R=301,L,NC]
+RewriteRule ^about-us/?$               /about.html      [R=301,L,NC]
+RewriteRule ^about/?$                  /about.html      [R=301,L,NC]
+RewriteRule ^our-topics/?$             /subjects.html   [R=301,L,NC]
+RewriteRule ^topics/?$                 /subjects.html   [R=301,L,NC]
+RewriteRule ^subjects/?$               /subjects.html   [R=301,L,NC]
+RewriteRule ^contact-us/?$             /contact.html    [R=301,L,NC]
+RewriteRule ^contact/?$                /contact.html    [R=301,L,NC]
+RewriteRule ^privacy-policy/?$         /privacy.html    [R=301,L,NC]
+RewriteRule ^privacy/?$                /privacy.html    [R=301,L,NC]
+RewriteRule ^terms/?$                  /terms.html      [R=301,L,NC]
+RewriteRule ^terms-and-conditions/?$   /terms.html      [R=301,L,NC]
+RewriteRule ^pricing/?$                /pricing.html    [R=301,L,NC]
+RewriteRule ^videos/?$                 /videos.html     [R=301,L,NC]
+RewriteRule ^login/?$                  /login.html      [R=301,L,NC]
