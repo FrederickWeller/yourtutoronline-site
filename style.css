@@ -52,7 +52,7 @@ h3 { font-size: 1.15rem; }
 
 .credentials-bar { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
 .badge { display: inline-block; padding: 6px 14px; border-radius: 999px; background: rgba(209,162,76,0.15); border: 1px solid var(--gold); color: var(--gold); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.02em; }
-.credentials-bar.on-light .badge { color: var(--navy); }
+.credentials-bar.on-light .badge { color: var(--navy); background: rgba(209,162,76,0.30); border: 2px solid var(--gold-dark); font-weight: 700; font-size: 0.95rem; padding: 7px 16px; }
 
 .btn { display: inline-block; padding: 12px 22px; border-radius: 999px; text-decoration: none; font-weight: 600; }
 .btn-primary { background: var(--gold); color: var(--navy-dark); }
